@@ -1,0 +1,445 @@
+* {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+a,
+a:hover {
+   text-decoration: none;
+}
+
+p,
+ul {
+   margin-bottom: 0;
+}
+
+img {
+   width: 100%;
+}
+
+/* =================================== HEADER start ====================================== */
+.header {
+   height: 986px;
+}
+
+.header-content {
+   background: url(../images/header__bg.jpg)no-repeat center /cover;
+}
+
+.nav {
+   padding: 50px 0;
+}
+
+.logo {
+   text-transform: uppercase;
+   font-family: 'Roboto';
+   font-weight: 900;
+   font-size: 40px;
+   line-height: 28px;
+   color: #4d5b88;
+}
+
+.logo:hover {
+   color: #4d5b88;
+}
+
+.burger-menu {
+   font-size: 30px;
+   color: #746f77;
+   cursor: pointer;
+}
+
+.header-content__title {
+   font-family: 'Roboto';
+   font-weight: 100;
+   color: #626262;
+   font-size: 50px;
+   margin-bottom: 15px;
+   text-align: center;
+}
+
+.header-content__title span {
+   font-family: 'Roboto';
+   font-weight: 700;
+   color: #011556;
+}
+
+.header-content__description {
+   line-height: 25px;
+   font-size: 16px;
+   font-family: 'Roboto';
+   font-weight: 300;
+   color: #000;
+   text-align: center;
+   margin-bottom: 107px;
+}
+
+.header-content form {
+   max-width: 376px;
+   width: 100%;
+   background: #fff;
+   margin: 0 auto;
+   padding: 33px 41px 13px;
+   text-align: center;
+}
+
+.header-content form h2 {
+   font-size: 20px;
+   font-family: 'Roboto';
+   font-weight: 400;
+   color: #011556;
+   line-height: 15px;
+   text-align: center;
+   margin-bottom: 42px;
+}
+
+.header-content form input {
+   padding: 10px 5px;
+   border: none;
+   border-bottom: 1px solid #c7c7c7;
+   margin-bottom: 26px;
+   border-radius: 0;
+}
+
+.header-content form textarea {
+   padding: 10px 5px;
+   border: none;
+   border-bottom: 1px solid #c7c7c7;
+   margin-bottom: 20px;
+   resize: none;
+   color: #808080;
+   font-size: 15px;
+   border-radius: 0;
+}
+
+.header-content form input::placeholder {
+   font-size: 15px;
+   color: #808080;
+}
+
+.header-content form button {
+   background: #011556;
+   border-radius: 27px;
+   color: white;
+   font-family: 'Roboto';
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 11px;
+   padding: 20px 23px 18px;
+   display: flex;
+   align-items: center;
+   margin: 0 auto;
+}
+
+.header-content form button i {
+   color: white;
+   font-size: 20px;
+   margin-left: 5px;
+   line-height: 11px;
+}
+
+.header-content form input:focus,
+.header-content form textarea:focus {
+   border-color: #c7c7c7;
+   box-shadow: none;
+}
+
+.header-content form button:hover {
+   color: #fff;
+}
+
+/* =================================== HEADER end ====================================== */
+/* =================================== MAIN start ====================================== */
+.tours {
+   padding: 70px 0;
+}
+
+.tours__title {
+   font-family: 'Roboto';
+   font-weight: 900;
+   font-size: 50px;
+   color: rgba(1, 21, 86, 0.8);
+   margin-bottom: 100px;
+}
+
+.tours__item_margin {
+   display: inline-block;
+   margin-top: 17px;
+}
+
+.tours__item a {
+   font-family: 'Roboto';
+   font-weight: 700;
+   font-size: 36px;
+   color: #011556;
+   border-bottom: 3px solid #011556;
+}
+
+.sights {
+   background: #fbfbfb;
+   padding: 70px 0;
+}
+
+.sights__title {
+   font-family: 'Roboto';
+   font-weight: 900;
+   font-size: 50px;
+   color: rgba(1, 21, 86, 0.8);
+   margin-bottom: 60px;
+   text-align: center;
+}
+
+.sights__description {
+   text-align: justify;
+   font-family: 'Roboto';
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 25px;
+   color: rgba(0, 0, 0, 0.5);
+   margin-bottom: 112px;
+}
+
+.sights-box {
+   position: relative;
+   margin-bottom: 25px;
+}
+
+.sights-box__content {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: rgba(204, 210, 230, 0.71);
+   opacity: 0;
+   transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+   transform: scaleX(0);
+}
+
+.sights-box:hover .sights-box__content {
+   opacity: 1;
+   transform: scaleX(1);
+}
+
+.sights-box__title {
+   color: #011556;
+   font-size: 30px;
+   font-family: 'Roboto';
+   font-weight: 400;
+}
+
+.sights-box__description {
+   color: #011556;
+   font-size: 14px;
+   font-family: 'Roboto';
+   font-weight: 400;
+   max-width: 210px;
+   width: 100%;
+}
+
+.sights__btn {
+   border-radius: 24px;
+   background: #011556;
+   color: #fff;
+   font-size: 17px;
+   line-height: 12px;
+   font-family: 'Roboto';
+   font-weight: 400;
+   padding: 17px 43px 16px;
+}
+
+.sights__btn:hover {
+   color: #fff;
+}
+
+.documents {
+   padding: 70px 0;
+}
+
+.documents__title {
+   font-family: 'Roboto';
+   font-weight: 900;
+   font-size: 50px;
+   color: rgba(1, 21, 86, 0.8);
+   margin-bottom: 60px;
+}
+
+.documents__description {
+   font-family: 'Roboto';
+   font-weight: 400;
+   font-size: 20px;
+   color: #000;
+}
+
+.documents ul li {
+   margin-top: 30px;
+   font-family: 'Roboto';
+   font-weight: 400;
+   font-size: 20px;
+   color: #000;
+}
+
+.documents ul li span {
+   margin-right: 20px;
+}
+
+.documents__info {
+   font-family: 'Roboto';
+   font-weight: 400;
+   font-size: 20px;
+   color: #000;
+   line-height: 50px;
+}
+
+.price {
+   padding: 70px 0;
+   background: #fbfbfb;
+}
+
+.price__title {
+   font-family: 'Roboto';
+   font-weight: 900;
+   font-size: 50px;
+   color: rgba(1, 21, 86, 0.8);
+   margin-bottom: 60px;
+}
+
+.price__description {
+   font-family: 'Roboto';
+   font-weight: 400;
+   font-size: 20px;
+   color: rgba(0, 0, 0, 0.5);
+   text-align: center;
+   margin-bottom: 100px;
+}
+
+.price__item {
+   background: #fff;
+   padding: 11px 9px 30px;
+   width: 70%;
+   bottom: -28px;
+   box-shadow: 6px 0 16px rgba(20, 20, 21, 0.157);
+}
+
+.price__box {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 40px;
+}
+
+.price-item__description {
+   font-family: 'Roboto';
+   font-weight: 500;
+   font-size: 28px;
+   color: rgba(0, 0, 0, 0.7);
+   line-height: 20px;
+   margin-bottom: 12px;
+}
+
+.price-item__price {
+   color: rgba(1, 21, 86, 0.7);
+   font-family: 'Roboto';
+   font-weight: 500;
+   font-size: 24px;
+}
+
+.reviews {
+   padding: 70px 0;
+}
+
+.reviews__title {
+   font-family: 'Roboto';
+   font-weight: 900;
+   font-size: 50px;
+   color: rgba(1, 21, 86, 0.8);
+   margin-bottom: 60px;
+   text-align: center;
+}
+
+.reviews__description {
+   font-family: 'Roboto';
+   font-weight: 400;
+   font-size: 20px;
+   color: rgba(0, 0, 0, 0.5);
+   text-align: center;
+   margin-bottom: 100px;
+}
+
+.reviews__box {
+   box-shadow: 0 0 27px rgba(20, 20, 21, 0.09);
+   margin-bottom: 60px;
+   position: relative;
+   padding: 127px 38px 20px;
+}
+
+.reviews-box__image {
+   position: absolute;
+   top: -43px;
+}
+
+.reviews-box__description {
+   font-family: 'Roboto';
+   font-weight: 500;
+   font-size: 17px;
+   line-height: 27px;
+   color: rgba(0, 0, 0, 0.7);
+   margin-bottom: 15px;
+}
+
+.reviews-box__icons {
+   font-size: 13px;
+   color: #ffef3b;
+}
+
+.reviews-box__title {
+   margin-top: 11px;
+   font-family: 'Roboto';
+   font-weight: 500;
+   font-size: 17px;
+   color: rgba(0, 0, 0, 0.8);
+}
+
+/* =================================== MAIN end ====================================== */
+/* =================================== FOOTER start ====================================== */
+.footer {
+   padding: 70px 54px;
+   background: #f7f7f7;
+}
+
+.footer__link{
+   background: #011556;
+   color: #fff;
+   border-radius: 27px;
+   font-size: 16px;
+   line-height: 10px;
+   padding: 22px 87px;
+   margin-bottom: 30px;
+}
+
+.footer-bottom__link{
+   background: #d3d3d3;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 52px;
+   height: 52px;
+   border-radius: 50%;
+   font-size: 21px;
+   color: #fff;
+   margin: 0 8px;
+}
+.footer-bottom__link:hover{
+   color: #fff;
+   background: #011556;
+}
+.footer-bottom__copyright{
+   font-size: 17px;
+   color: rgba(0, 0, 0, 0.6);
+   display: flex;
+   align-items: center;
+}
+.footer__link:hover{
+   color: #fff;
+}
+/* =================================== FOOTER end ====================================== */
